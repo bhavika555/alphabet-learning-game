@@ -1,0 +1,65 @@
+/* General page styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background: #0d1117; /* Dark background */
+    margin: 0;
+    padding: 20px;
+    color: #c9d1d9; /* Soft text color */
+}
+
+/* Heading */
+h1 {
+    color: #58a6ff; /* Cobalt accent */
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #8b949e;
+    font-size: 1.1rem;
+}
+
+/* Grid container */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    gap: 15px;
+    justify-content: center;
+    max-width: 500px;
+    margin: 30px auto;
+}
+
+/* Letter buttons */
+button {
+    width: 80px;
+    height: 80px;
+    font-size: 24px;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    background: #1f6feb; /* Cobalt blue */
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(31, 111, 235, 0.4);
+    transition: transform 0.1s ease, background 0.3s, box-shadow 0.3s;
+}
+
+/* Button hover effect */
+button:hover {
+    background: #388bfd;
+    box-shadow: 0 6px 12px rgba(31, 111, 235, 0.6);
+}
+
+/* Button click effect */
+button:active {
+    transform: translateY(2px);
+    background: #1f6feb;
+    box-shadow: 0 2px 6px rgba(31, 111, 235, 0.4);
+}
+
+/* Button focus (for keyboard press highlight) */
+button:focus {
+    outline: 3px solid #58a6ff;
+    outline-offset: 2px;
+}
